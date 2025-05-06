@@ -4,7 +4,7 @@
 import Link from 'next/link';
 import { Phone, Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTrigger, SheetTitle, VisuallyHidden } from '@/components/ui/sheet';
 import { useState, useEffect } from 'react';
 
 const navItems = [
@@ -71,6 +71,9 @@ export default function Header() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="w-full max-w-xs bg-background p-6">
+                <VisuallyHidden asChild>
+                  <SheetTitle>Mobile Navigation Menu</SheetTitle>
+                </VisuallyHidden>
                 <div className="flex flex-col space-y-6">
                   <Link href="/" className="text-2xl font-bold text-foreground hover:text-accent transition-colors" onClick={() => setIsMobileMenuOpen(false)}>
                     Advance Interior
