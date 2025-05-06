@@ -36,34 +36,41 @@ export async function getYouTubeVideos(channelId: string): Promise<YouTubeVideo[
 
   return [
     {
-      id: 'dQw4w9WgXcQ', // Placeholder video ID
-      title: 'Placeholder Video 1: Modern Living Room Tour',
-      thumbnailUrl: 'https://picsum.photos/seed/youtube1/480/270', // Placeholder thumbnail
-      dataAiHint: 'modern living room'
+      id: 'B0Ye6jicK1E',
+      title: 'Advance Interior Project Showcase 1',
+      thumbnailUrl: 'https://picsum.photos/seed/yt_B0Ye6jicK1E/480/270',
+      dataAiHint: 'interior design video'
     },
     {
-      id: 'L_LUpnjgPso', // Placeholder video ID
-      title: 'Placeholder Video 2: Kitchen Design Ideas',
-      thumbnailUrl: 'https://picsum.photos/seed/youtube2/480/270', // Placeholder thumbnail
-      dataAiHint: 'kitchen design'
+      id: 'UYNFBqs_jzg',
+      title: 'Advance Interior Project Showcase 2',
+      thumbnailUrl: 'https://picsum.photos/seed/yt_UYNFBqs_jzg/480/270',
+      dataAiHint: 'architecture video'
     },
     {
-      id: '3JZ_D3ELwOQ', // Placeholder video ID
-      title: 'Placeholder Video 3: Office Space Transformation',
-      thumbnailUrl: 'https://picsum.photos/seed/youtube3/480/270', // Placeholder thumbnail
-      dataAiHint: 'office interior'
+      id: 'WrHFKqbgzoU',
+      title: 'Advance Interior Project Showcase 3',
+      thumbnailUrl: 'https://picsum.photos/seed/yt_WrHFKqbgzoU/480/270',
+      dataAiHint: 'design inspiration'
     },
     {
-      id: 'NWHXo22s5v4',
-      title: 'Placeholder Video 4: Architectural Marvels Showcase',
-      thumbnailUrl: 'https://picsum.photos/seed/youtube4/480/270',
-      dataAiHint: 'modern architecture'
+      id: '5Mb16CjQrNg',
+      title: 'Advance Interior Project Showcase 4',
+      thumbnailUrl: 'https://picsum.photos/seed/yt_5Mb16CjQrNg/480/270',
+      dataAiHint: 'home decor video'
     },
     {
-      id: 'kf0fCa38z1g',
-      title: 'Placeholder Video 5: Luxury Bedroom Inspirations',
-      thumbnailUrl: 'https://picsum.photos/seed/youtube5/480/270',
-      dataAiHint: 'luxury bedroom'
+      id: 'warF_Ys8pJ8',
+      title: 'Advance Interior Project Showcase 5',
+      thumbnailUrl: 'https://picsum.photos/seed/yt_warF_Ys8pJ8/480/270',
+      dataAiHint: 'office design'
+    },
+    {
+      id: 'VHu30Idf0EA',
+      title: 'Advance Interior Project Showcase 6',
+      thumbnailUrl: 'https://picsum.photos/seed/yt_VHu30Idf0EA/480/270',
+      dataAiHint: 'modern interior'
     }
   ];
 }
+
