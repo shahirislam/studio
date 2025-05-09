@@ -11,7 +11,7 @@ const services = [
     description: 'Crafting beautiful and functional living spaces tailored to your lifestyle. From concept to completion, we bring your dream home to life.',
     icon: Home,
     link: '/services#residential',
-    imageSrc: 'https://picsum.photos/600/400?random=4',
+    imageSrc: 'https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     dataAiHint: 'modern kitchen',
   },
   {
@@ -19,7 +19,7 @@ const services = [
     description: 'Designing inspiring and productive environments for businesses. We create spaces that reflect your brand and enhance customer experience.',
     icon: Building,
     link: '/services#commercial',
-    imageSrc: 'https://picsum.photos/600/400?random=5',
+    imageSrc: 'https://5.imimg.com/data5/SELLER/Default/2025/1/480581481/IN/CX/ND/9009672/commercial-interior-design-services.jpg',
     dataAiHint: 'office reception',
   },
   {
@@ -27,7 +27,7 @@ const services = [
     description: 'Innovative architectural solutions for new constructions and renovations. Our expertise spans planning, design, and project management.',
     icon: PenTool,
     link: '/services#architectural',
-    imageSrc: 'https://picsum.photos/600/400?random=6',
+    imageSrc: 'https://decoruss.com/wp-content/uploads/2020/05/best-interior-design-in-lucknow-1.jpg',
     dataAiHint: 'modern building exterior',
   },
 ];

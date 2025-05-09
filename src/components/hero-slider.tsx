@@ -18,7 +18,7 @@ import { useEffect, useState } from 'react';
 const slides = [
   {
     id: 1,
-    imageSrc: "https://picsum.photos/1920/1080?random=1",
+    imageSrc: "https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     alt: "Modern Living Room Design",
     headline: "Creating Spaces That Inspire",
     subheadline: "Innovative interior design and architectural solutions for modern living.",
@@ -28,7 +28,7 @@ const slides = [
   },
   {
     id: 2,
-    imageSrc: "https://picsum.photos/1920/1080?random=2",
+    imageSrc: "https://images.pexels.com/photos/7303735/pexels-photo-7303735.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     alt: "Elegant Commercial Space",
     headline: "Transforming Visions into Reality",
     subheadline: "Expert design services for residential and commercial properties.",
@@ -38,7 +38,7 @@ const slides = [
   },
   {
     id: 3,
-    imageSrc: "https://picsum.photos/1920/1080?random=3",
+    imageSrc: "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     alt: "Luxury Bedroom Interior",
     headline: "Experience the Art of Design",
     subheadline: "Bespoke interiors tailored to your unique style and needs.",

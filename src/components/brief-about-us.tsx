@@ -24,7 +24,7 @@ export default function BriefAboutUs() {
           </div>
           <div className="order-1 md:order-2 relative h-80 md:h-96 rounded-lg overflow-hidden shadow-xl">
             <Image
-              src="https://picsum.photos/800/600?random=10" // Placeholder image
+              src="https://scontent.fzyl7-1.fna.fbcdn.net/v/t39.30808-6/358687919_582216120746763_115485640079159906_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeF-wM4PQWHnyDAo8mUWocvDwDCsmRTluUTAMKyZFOW5RFteYY0P5wWcgK-uM9qNBPujjDR_wH7svvae6cUZjApc&_nc_ohc=dwhw54b7knYQ7kNvwGrraCm&_nc_oc=Adl5ocyHHzTrAPdZvjL7ap4911v5SZ-a-2fOYqYomZD5-iAG8nJ9rwdDrhykXIFSXRk&_nc_zt=23&_nc_ht=scontent.fzyl7-1.fna&_nc_gid=__Or18lTPH3RgETk13QPDg&oh=00_AfJX2o08AWLUMDhU1TILGJwiZ1S8kV7d4WhjUj28rlZN3w&oe=68243A69" // Placeholder image
               alt="Advance Interior Team Working"
               layout="fill"
               objectFit="cover"

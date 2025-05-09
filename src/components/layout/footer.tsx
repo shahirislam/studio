@@ -13,7 +13,7 @@ const navItems = [
 ];
 
 const socialLinks = [
-  { icon: Facebook, href: '#', label: 'Facebook' },
+  { icon: Facebook, href: 'https://www.facebook.com/advanceinterior', label: 'Facebook' },
   { icon: Instagram, href: '#', label: 'Instagram' },
   { icon: Twitter, href: '#', label: 'Twitter' },
   { icon: Linkedin, href: '#', label: 'LinkedIn' },
@@ -81,8 +81,18 @@ export default function Footer() {
 
         <div className="mt-12 border-t border-border pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            &copy; {currentYear} Advance Interior. All rights reserved.
-            {/* Comment: Add link to privacy policy and terms of service if available */}
+            &copy; 2025 Advance Interior. All rights reserved.
+          </p>
+          <p className="text-xs text-muted-foreground mt-2">
+            Designed &amp; Developed by{' '}
+            <a
+                href="https://shahirislam.me"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-muted-foreground hover:text-foreground hover:underline transition-colors duration-150"
+            >
+              Shahir Islam
+            </a>.
           </p>
         </div>
       </div>

@@ -10,7 +10,7 @@ const projects = [
     id: 'project-1',
     name: 'Modern Villa Haven',
     location: 'Uttara, Dhaka',
-    imageSrc: 'https://picsum.photos/800/600?random=7',
+    imageSrc: 'https://dubai-immo.com/wp-content/uploads/2023/10/villa-haven-ladar-dubai-4-bed-scaled.jpg',
     description: 'A stunning transformation of a residential villa, focusing on open spaces and natural light.',
     dataAiHint: 'luxury villa interior'
   },
@@ -18,7 +18,7 @@ const projects = [
     id: 'project-2',
     name: 'Chic Corporate Office',
     location: 'Gulshan, Dhaka',
-    imageSrc: 'https://picsum.photos/800/600?random=8',
+    imageSrc: 'https://volzero.com/img/article/102277_banner.jpg',
     description: 'An elegant and functional office design that promotes productivity and brand identity.',
     dataAiHint: 'modern office design'
   },
@@ -26,7 +26,7 @@ const projects = [
     id: 'project-3',
     name: 'Serene Apartment Retreat',
     location: 'Banani, Dhaka',
-    imageSrc: 'https://picsum.photos/800/600?random=9',
+    imageSrc: 'https://a0.muscache.com/im/pictures/miso/Hosting-744662014153859699/original/ecf8fb8f-2fb7-48ce-a1f5-82915451bdd4.jpeg?im_w=720',
     description: 'Creating a peaceful and stylish urban sanctuary within a compact apartment space.',
     dataAiHint: 'apartment living room'
   },

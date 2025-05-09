@@ -32,7 +32,7 @@ export default function AboutPage() {
             </div>
             <div className="relative h-80 md:h-[450px] rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="https://picsum.photos/800/650?random=15"
+                src="https://scontent.fzyl7-1.fna.fbcdn.net/v/t39.30808-6/358687919_582216120746763_115485640079159906_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeF-wM4PQWHnyDAo8mUWocvDwDCsmRTluUTAMKyZFOW5RFteYY0P5wWcgK-uM9qNBPujjDR_wH7svvae6cUZjApc&_nc_ohc=dwhw54b7knYQ7kNvwGrraCm&_nc_oc=Adl5ocyHHzTrAPdZvjL7ap4911v5SZ-a-2fOYqYomZD5-iAG8nJ9rwdDrhykXIFSXRk&_nc_zt=23&_nc_ht=scontent.fzyl7-1.fna&_nc_gid=__Or18lTPH3RgETk13QPDg&oh=00_AfJX2o08AWLUMDhU1TILGJwiZ1S8kV7d4WhjUj28rlZN3w&oe=68243A69"
                 alt="Advance Interior office or design process"
                 layout="fill"
                 objectFit="cover"
@@ -74,11 +74,11 @@ export default function AboutPage() {
             <div className="mt-8 md:mt-0">
               <h2 className="text-3xl font-semibold text-foreground mb-6">Mission & Vision</h2>
               <div className="bg-background p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold text-primary mb-2">Our Mission</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-2">Our Mission</h3>
                 <p className="text-muted-foreground mb-4">
                   To create exceptional interior and architectural designs that enhance the quality of life and work, delivering unparalleled value and service to our clients.
                 </p>
-                <h3 className="text-xl font-semibold text-primary mb-2">Our Vision</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-2">Our Vision</h3>
                 <p className="text-muted-foreground">
                   To be a leading design firm recognized for innovation, quality, and our commitment to transforming spaces into inspiring environments.
                 </p>
