@@ -19,12 +19,30 @@ async function getProjectDetails(projectId: string) {
   // Simulate API call delay
   await new Promise(resolve => setTimeout(resolve, 200));
 
+  const projectNumber = parseInt(projectId.split('-').pop() || '1');
+  const category = projectNumber % 3 === 1 ? 'Residential' : projectNumber % 3 === 2 ? 'Commercial' : 'Architectural';
+
+  let categoryHints: string[] = [];
+  switch (category) {
+    case 'Residential':
+      categoryHints = ["modern living", "elegant bedroom", "kitchen detail", "stylish bathroom", "cozy interior"];
+      break;
+    case 'Commercial':
+      categoryHints = ["office workspace", "reception design", "retail layout", "restaurant interior", "modern commercial"];
+      break;
+    case 'Architectural':
+      categoryHints = ["building facade", "structure detail", "exterior view", "architectural design", "urban landscape"];
+      break;
+    default:
+      categoryHints = ["design detail", "interior space", "project view", "architectural element", "room design"];
+  }
+
   // Placeholder data - you'd replace this with actual data fetching
   const mockProject = {
     id: projectId,
-    name: `Elegant Design Showcase - ${projectId.split('-').pop()}`,
-    location: `Location ${String.fromCharCode(64 + parseInt(projectId.split('-').pop() || '1'))}, Dhaka`,
-    category: parseInt(projectId.split('-').pop() || '1') % 3 === 1 ? 'Residential' : parseInt(projectId.split('-').pop() || '1') % 3 === 2 ? 'Commercial' : 'Architectural',
+    name: `Elegant Design Showcase - ${projectNumber}`,
+    location: `Location ${String.fromCharCode(64 + projectNumber)}, Dhaka`,
+    category: category,
     description: `This project, ${projectId}, exemplifies our commitment to creating spaces that are both aesthetically pleasing and highly functional. We focused on maximizing natural light and incorporating sustainable materials. The design seamlessly blends modern elements with timeless elegance, resulting in a harmonious and inviting environment. Key features include custom millwork, state-of-the-art fixtures, and a carefully curated color palette.`,
     servicesProvided: [
       'Full Interior Design Package',
@@ -36,13 +54,12 @@ async function getProjectDetails(projectId: string) {
     ],
     images: Array.from({ length: 5 }).map((_, i) => ({
       src: `https://picsum.photos/seed/${projectId}-img${i + 1}/1200/800`,
-      alt: `View ${i + 1} of project ${projectId}`,
-      dataAiHint: `interior view ${i+1}`
+      alt: `View ${i + 1} of project ${projectId} - ${category}`,
+      dataAiHint: categoryHints[i % categoryHints.length] || `project view ${i+1}`
     })),
-    mainImageAIHint: `project ${projectId.split('-').pop()} main`,
   };
 
-  if (!mockProject.name.includes(projectId.split('-').pop() || '')) { // Basic check if project exists
+  if (!mockProject.name.includes(String(projectNumber))) { // Basic check if project exists
     return null;
   }
   return mockProject;
