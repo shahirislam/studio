@@ -20,57 +20,33 @@ export interface YouTubeVideo {
   dataAiHint?: string;
 }
 
+// List of video IDs provided by the user
+const videoDetails = [
+  { id: 'B0Ye6jicK1E', title: 'Advance Interior Project Showcase 1', dataAiHint: 'interior design video' },
+  { id: 'UYNFBqs_jzg', title: 'Advance Interior Project Showcase 2', dataAiHint: 'architecture video' },
+  { id: 'WrHFKqbgzoU', title: 'Advance Interior Project Showcase 3', dataAiHint: 'design inspiration' },
+  { id: '5Mb16CjQrNg', title: 'Advance Interior Project Showcase 4', dataAiHint: 'home decor video' },
+  { id: 'warF_Ys8pJ8', title: 'Advance Interior Project Showcase 5', dataAiHint: 'office design video' },
+  { id: 'VHu30Idf0EA', title: 'Advance Interior Project Showcase 6', dataAiHint: 'modern interior video' }
+];
+
 /**
  * Asynchronously retrieves a list of YouTube videos from a channel.
  *
- * @param channelId The ID of the YouTube channel.
+ * @param channelId The ID of the YouTube channel (currently unused as video IDs are hardcoded).
  * @returns A promise that resolves to an array of YouTubeVideo objects.
  */
 export async function getYouTubeVideos(channelId: string): Promise<YouTubeVideo[]> {
-  // TODO: Implement this by calling the YouTube API.
-  // This requires setting up a Google Cloud Project, enabling the YouTube Data API v3,
-  // and handling API key securely. The channel ID "UCxxxxxxxxxxxxxxx" is a placeholder.
-  // For now, returning placeholder data.
+  // Using predefined video IDs and constructing standard YouTube thumbnail URLs.
+  // The channelId parameter is kept for future API integration but is not used in this placeholder implementation.
+  console.warn(`YouTube channelId ${channelId} is not used. Using hardcoded video list with actual YouTube thumbnails.`);
 
-  console.warn(`YouTube API not implemented. Using placeholder videos for channel: ${channelId}`);
-
-  return [
-    {
-      id: 'B0Ye6jicK1E',
-      title: 'Advance Interior Project Showcase 1',
-      thumbnailUrl: 'https://picsum.photos/seed/yt_B0Ye6jicK1E/480/270',
-      dataAiHint: 'interior design video'
-    },
-    {
-      id: 'UYNFBqs_jzg',
-      title: 'Advance Interior Project Showcase 2',
-      thumbnailUrl: 'https://picsum.photos/seed/yt_UYNFBqs_jzg/480/270',
-      dataAiHint: 'architecture video'
-    },
-    {
-      id: 'WrHFKqbgzoU',
-      title: 'Advance Interior Project Showcase 3',
-      thumbnailUrl: 'https://picsum.photos/seed/yt_WrHFKqbgzoU/480/270',
-      dataAiHint: 'design inspiration'
-    },
-    {
-      id: '5Mb16CjQrNg',
-      title: 'Advance Interior Project Showcase 4',
-      thumbnailUrl: 'https://picsum.photos/seed/yt_5Mb16CjQrNg/480/270',
-      dataAiHint: 'home decor video'
-    },
-    {
-      id: 'warF_Ys8pJ8',
-      title: 'Advance Interior Project Showcase 5',
-      thumbnailUrl: 'https://picsum.photos/seed/yt_warF_Ys8pJ8/480/270',
-      dataAiHint: 'office design'
-    },
-    {
-      id: 'VHu30Idf0EA',
-      title: 'Advance Interior Project Showcase 6',
-      thumbnailUrl: 'https://picsum.photos/seed/yt_VHu30Idf0EA/480/270',
-      dataAiHint: 'modern interior'
-    }
-  ];
+  return videoDetails.map(video => ({
+    id: video.id,
+    title: video.title,
+    // Using high-quality default thumbnail from YouTube.
+    // Other options include: mqdefault.jpg (medium), sddefault.jpg (standard), maxresdefault.jpg (max resolution, if available)
+    thumbnailUrl: `https://i.ytimg.com/vi/${video.id}/hqdefault.jpg`, 
+    dataAiHint: video.dataAiHint,
+  }));
 }
-
